@@ -20,7 +20,7 @@ router.get("/add", (req, res) => {
   res.render("add");
 });
 
-router.post("/add", function (req, res) {
+router.post("/", function (req, res) {
   var movie = req.body.movie;
   Movie.create(movie, function (err, newMovie) {
     if (err) {
