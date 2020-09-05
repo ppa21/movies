@@ -1,0 +1,8 @@
+<h1>Edit <%= movie.name %></h1>
+
+<form method="POST" action="/movies/<%= movie._id %>">
+  <input value="<%= movie.name %>" name="movie[name]" type="text" />
+  <button>submit</button>
+</form>
+
+<button><a href="/">Go Back</a></button>
